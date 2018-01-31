@@ -2,6 +2,7 @@
 Can not retrieve a mongodb collection on a Cloud Server.
 
 See here https://github.com/bastiankemmer/Scala_MongoDB_Test/blob/master/src/main/scala/com/test/mongo/model/MongoDBTestDB.scala
+
 MongoDatabase.getCollection(collectionName) will throw following Exception:
 
 ```javascript
