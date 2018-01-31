@@ -5,7 +5,7 @@ See here https://github.com/bastiankemmer/Scala_MongoDB_Test/blob/master/src/mai
 
 MongoDatabase.getCollection(collectionName) will throw following Exception:
 
-```javascript
+```bash
 Exception in thread "main" java.lang.VerifyError: Expecting a stackmap frame at branch target 50
 Exception Details:
   Location:
