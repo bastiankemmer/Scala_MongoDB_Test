@@ -15,8 +15,10 @@ object MongoDBTestDB {
     fromProviders(classOf[Person]), fromRegistries(
       fromProviders(classOf[Address]), DEFAULT_CODEC_REGISTRY))
 
-  val mongoClient: MongoClient = MongoClient()
+  val mongoClient: MongoClient = MongoClient(s"mongodb://${config.getString("mongo.host")}:${config.getString("mongo.port")}")
 
   // get handle to "mydb" database
   val testDatabase: MongoDatabase = mongoClient.getDatabase(config.getString("mongo.db")).withCodecRegistry(codecRegistry)
+
+  val addressesCollection = testDatabase.getCollection("address")
 }
