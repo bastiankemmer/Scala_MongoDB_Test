@@ -47,3 +47,21 @@ Exception Details:
 	at com.test.mongo.Boot$.main(Boot.scala:11)
 	at com.test.mongo.Boot.main(Boot.scala)
 ```
+
+`mongo --version` output:
+```bash
+MongoDB shell version v3.4.5
+git version: 520b8f3092c48d934f0cd78ab5f40fe594f96863
+OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
+allocator: tcmalloc
+modules: none
+build environment:
+    distmod: ubuntu1604
+    distarch: x86_64
+    target_arch: x86_64
+```
+
+`uname -a` output:
+```bash
+Linux url.jiffybox.net 4.4.27-x86_64-jb1 #4 SMP Tue Jun 6 14:41:09 CEST 2017 x86_64 x86_64 x86_64 GNU/Linux
+```
